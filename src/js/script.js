@@ -109,7 +109,6 @@ async function update(id, event) {
   sendData(id, object);
 
   function sendData(id, object) {
-    
     fetch(`http://localhost:3000/cores/${id}`, {
       method: "PATCH",
       headers: {
@@ -122,26 +121,28 @@ async function update(id, event) {
       })
       .catch((err) => alert(err));
   }
-
 }
 
 function deletItem(id) {
   fetch(`http://localhost:3000/cores/${id}`, {
-    method: 'DELETE',
+    method: "DELETE",
   })
-  .then(response => response.json())
-  .then(() => console.log('User deleted'));
+    .then((response) => response.json())
+    .then(() => console.log("User deleted"));
 }
 
-function applyTheme(id, event){
+function applyTheme(id, event) {
   event.preventDefault();
 
-  const name = document.getElementById(`name-${id}`).value;
   const primary = document.getElementById(`primary-${id}`).value;
   const secondary = document.getElementById(`secondary-${id}`).value;
   const success = document.getElementById(`success-${id}`).value;
   const danger = document.getElementById(`danger-${id}`).value;
   const warning = document.getElementById(`warning-${id}`).value;
 
-  console.log(name);
+  document.documentElement.style.setProperty("--primary", primary);
+  document.documentElement.style.setProperty("--secondary", secondary);
+  document.documentElement.style.setProperty("--success", success);
+  document.documentElement.style.setProperty("--danger", danger);
+  document.documentElement.style.setProperty("--warning", warning);
 }

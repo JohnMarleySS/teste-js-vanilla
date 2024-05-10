@@ -23,18 +23,7 @@
       }
     },
     {
-      "name": "Cor azul",
-      "colors": {
-        "primary": "#0011ff",
-        "secondary": "#9c8181",
-        "success": "#ce0909",
-        "danger": "#1ab2c7",
-        "warning": "#be8989"
-      },
-      "id": 3
-    },
-    {
-      "name": "cor escura",
+      "name": "Tema Marrom",
       "colors": {
         "primary": "#af5050",
         "secondary": "#3e3232",
@@ -45,7 +34,7 @@
       "id": 4
     },
     {
-      "name": "Cores avermelhadas",
+      "name": "Tema Vermelho",
       "colors": {
         "primary": "#ff0000",
         "secondary": "#985d5d",
@@ -104,9 +93,9 @@
       "name": "preto",
       "colors": {
         "primary": "#000000",
-        "secondary": "#000000",
-        "success": "#000000",
-        "danger": "#000000",
+        "secondary": "#ae6f6f",
+        "success": "#507295",
+        "danger": "#66c832",
         "warning": "#ffffff"
       }
     },
@@ -131,17 +120,6 @@
         "warning": "#604c1f"
       },
       "id": 14
-    },
-    {
-      "name": "sacas",
-      "colors": {
-        "primary": "#fb0ed4",
-        "secondary": "#ffffff",
-        "success": "#ffffff",
-        "danger": "#ffffff",
-        "warning": "#ffffff"
-      },
-      "id": 15
     },
     {
       "name": "sacas",
