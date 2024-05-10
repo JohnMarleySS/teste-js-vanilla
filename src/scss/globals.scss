@@ -1,5 +1,14 @@
 :root {
-    --background-color: #FFFFFF
+    --background-color: "bg-light";
+    --primary: "#f8f9fa";
+    --secondary: "#6c757d";
+    --success: "";
+    --danger: "";
+    --warning: "";
+}
+
+.navbar {
+    background-color: var(--primary);
 }
 
 body {
@@ -7,4 +16,12 @@ body {
     height: 100vh;
 
     background-color: var(--background-color);
+}
+
+p{
+    color: var(--secondary);
+}
+
+.card-body {
+     color: var(--secondary);
 }

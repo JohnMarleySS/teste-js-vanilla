@@ -30,9 +30,9 @@ function onFormSubmit(event) {
 
 function sendData(object) {
   fetch("http://localhost:3000/cores/", {
-    method: "POST",
+    method: 'POST',
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify(object),
   }).then((res) => {
