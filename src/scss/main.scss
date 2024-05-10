@@ -19,13 +19,17 @@
     flex-wrap: wrap;
 }
 
-.container-cards {
+.title-theme {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    font-size: 1.6rem;
 }
 
-.title-theme {
-    font-size: 1.6rem;
+.container-cards {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .primary-color {

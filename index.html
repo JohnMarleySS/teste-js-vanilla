@@ -48,12 +48,28 @@
     </nav>
     <main class="container-main">
         <div class="title-theme">
-            <p>Escolha seu tema:</p>
+            <div>
+                <p>Escolha seu tema:</p>
+            </div>
+            <div>
+                <div class="input-group mb-3">
+                    <input type="search" class="form-control" placeholder="Procurar por nome"
+                        aria-label="Procurar por nome" aria-describedby="basic-addon2" oninput="filterByName(event)">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg></span>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="container-cards" id="div-objects"></div>
     </main>
 </body>
 <script src="./src/js/script.js"></script>
-<script src="./src/js/change-color.js"></script>
+<script src="./src/js/search-item.js"></script>
+<script src="./src/js/modal.js"></script>
 
 </html>

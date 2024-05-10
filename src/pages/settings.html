@@ -16,9 +16,9 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="./src/scss/globals.css" />
-    <link rel="stylesheet" href="./src/scss/main.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../scss/globals.css" />
+    <link rel="stylesheet" href="../scss/settings.css">
+    <title>Adicionar</title>
 </head>
 
 <body>
@@ -46,8 +46,47 @@
             </ul>
         </div>
     </nav>
-
+    <main class="container-main">
+        <div class="title-theme">
+            <div>
+                <p>Adicionar paleta de cores:</p>
+            </div>
+        </div>
+        <div>
+            <form id="my-form">
+                <div class="container-input">
+                    <div class="container">
+                        <label for="validationCustom01">Nome</label>
+                        <input type="text" class="form-control" name="name" placeholder="First name" value="" required>
+                    </div>
+                    <div class="mr-auto mb-3">
+                        <input type="color" id="primary" name="primary" value="#ffffff" />
+                        <label for="primary">Primary</label>
+                    </div>
+                    <div class="mr-auto mb-3">
+                        <input type="color" id="secondary" name="secondary" value="#ffffff" />
+                        <label for="secondary">Secondary</label>
+                    </div>
+                    <div class="mr-auto mb-3">
+                        <input type="color" id="success" name="success" value="#ffffff" />
+                        <label for="success">Success</label>
+                    </div>
+                    <div class="mr-auto mb-3">
+                        <input type="color" id="danger" name="danger" value="#ffffff" />
+                        <label for="danger">Danger</label>
+                    </div>
+                    <div class="mr-auto mb-3">
+                        <input type="color" id="warning" name="warning" value="#ffffff" />
+                        <label for="warning">Warning</label>
+                    </div>
+                    <div class="mr-auto mb-3">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
 </body>
-<script src="./src/js/script.js"></script>
+<script src="../js/send-data.js"></script>
 
 </html>

@@ -1,7 +1,7 @@
 {
   "cores": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Tema Azul",
       "colors": {
         "primary": "#007bff",
@@ -12,7 +12,7 @@
       }
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Tema Verde",
       "colors": {
         "primary": "#28a745",
@@ -20,6 +20,63 @@
         "success": "#218838",
         "danger": "#c82333",
         "warning": "#ffc107"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Cor azul",
+      "colors": {
+        "primary": "#3a4098",
+        "secondary": "#9c8181",
+        "success": "#ce0909",
+        "danger": "#1ab2c7",
+        "warning": "#be8989"
+      }
+    },
+    {
+      "id": "4",
+      "name": "cor escura",
+      "colors": {
+        "primary": "#af5050",
+        "secondary": "#3e3232",
+        "success": "#00ffe1",
+        "danger": "#4c00ff",
+        "warning": "#ff00c8"
+      }
+    },
+    {
+      "id": "5",
+      "name": "cores claras",
+      "colors": {
+        "id": 5,
+        "primary": "#ff0000",
+        "secondary": "#985d5d",
+        "success": "#ec3636",
+        "danger": "#5c4747",
+        "warning": "#8c6e6e"
+      }
+    },
+    {
+      "id": "0d58",
+      "name": "Cor",
+      "colors": {
+        "id": "6",
+        "primary": "#985757",
+        "secondary": "#675b5b",
+        "success": "#ae2d2d",
+        "danger": "#946161",
+        "warning": "#2f1e1e"
+      }
+    },
+    {
+      "id": "f428",
+      "name": "paaa",
+      "colors": {
+        "primary": "#652424",
+        "secondary": "#605757",
+        "success": "#000000",
+        "danger": "#521414",
+        "warning": "#990000"
       }
     }
   ]
