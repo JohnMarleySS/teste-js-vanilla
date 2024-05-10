@@ -1,17 +1,6 @@
 {
   "cores": [
     {
-      "id": "1",
-      "name": "Tema Azul",
-      "colors": {
-        "primary": "#007bff",
-        "secondary": "#6c757d",
-        "success": "#28a745",
-        "danger": "#dc3545",
-        "warning": "#ffc107"
-      }
-    },
-    {
       "id": "2",
       "name": "Tema Verde",
       "colors": {
@@ -48,7 +37,6 @@
       "id": "5",
       "name": "cores claras",
       "colors": {
-        "id": 5,
         "primary": "#ff0000",
         "secondary": "#985d5d",
         "success": "#ec3636",
@@ -60,7 +48,6 @@
       "id": "0d58",
       "name": "Cor",
       "colors": {
-        "id": "6",
         "primary": "#985757",
         "secondary": "#675b5b",
         "success": "#ae2d2d",
@@ -77,6 +64,28 @@
         "success": "#000000",
         "danger": "#521414",
         "warning": "#990000"
+      }
+    },
+    {
+      "id": "69ef",
+      "name": "Theme Salmão",
+      "colors": {
+        "primary": "#e5aeae",
+        "secondary": "#2f2828",
+        "success": "#dd6e6e",
+        "danger": "#7d4a4a",
+        "warning": "#ea4d4d"
+      }
+    },
+    {
+      "id": "ea1b",
+      "name": "Cores solidas",
+      "colors": {
+        "primary": "#4b2fb1",
+        "secondary": "#4d4c4c",
+        "success": "#4f4f4f",
+        "danger": "#b13535",
+        "warning": "#ce6969"
       }
     }
   ]

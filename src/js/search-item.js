@@ -5,7 +5,7 @@ function filterByName(event) {
   listItems.forEach(function (item) {
     item.style.display = "revert";
 
-    if (!item.innerHTML.toLowerCase().includes(search)) {
+    if (!item.innerHTML.toLowerCase().includes(search.toLowerCase())) {
       item.style.display = "none";
     }
   });
