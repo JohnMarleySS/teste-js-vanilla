@@ -35,10 +35,25 @@
 
 .primary-color {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   color: #6c757d;
   min-height: 100px;
+}
+
+.container {
+  padding: 0;
+}
+
+.my-form {
+  width: 100%;
+}
+
+.container-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
 }
 
 .card-title-changed {
@@ -68,8 +83,23 @@
 .container-input {
   display: flex;
   flex-direction: column;
-  width: 450px;
-  max-width: 450px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.container-colors {
+  margin: 20px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.container-colors div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .options-card {
@@ -103,5 +133,10 @@
 @media (max-width: 992px) {
   .nav-hide-and-show-icon {
     display: none;
+  }
+}
+@media (max-width: 450px) {
+  .container-input {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -49,3 +49,14 @@
         width: 100%;
     }
 }
+
+@media (min-width: 992px) {
+    .nav-hide-and-show{
+     display: none;
+    }
+ }
+ @media (max-width: 992px) {
+     .nav-hide-and-show-icon{
+      display: none;
+     }
+  }
