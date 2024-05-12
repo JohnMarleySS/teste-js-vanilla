@@ -1,7 +1,7 @@
 :root {
-    --background-color: "bg-light";
-    --primary: "#f8f9fa";
-    --secondary: "#6c757d";
+    --background-color: "";
+    --primary: "";
+    --secondary: "";
     --success: "";
     --danger: "";
     --warning: "";
@@ -34,7 +34,7 @@ body {
     background-color: var(--primary);
 }
 
-a, span, p{
+a, span, p, label{
     color: var(--secondary);
 }
 

@@ -1,17 +1,6 @@
 {
   "cores": [
     {
-      "id": 1,
-      "name": "Tema Azul",
-      "colors": {
-        "primary": "#007bff",
-        "secondary": "#000000",
-        "success": "#28a745",
-        "danger": "#dc3545",
-        "warning": "#ffc107"
-      }
-    },
-    {
       "id": 2,
       "name": "Tema Verde",
       "colors": {
@@ -81,7 +70,7 @@
       "name": "Cores solidas",
       "colors": {
         "primary": "#4b2fb1",
-        "secondary": "#4d4c4c",
+        "secondary": "#ffffff",
         "success": "#4f4f4f",
         "danger": "#b13535",
         "warning": "#ce6969"
@@ -98,39 +87,6 @@
         "danger": "#66c832",
         "warning": "#ffffff"
       }
-    },
-    {
-      "id": 12,
-      "name": "azul",
-      "colors": {
-        "primary": "#5559ce",
-        "secondary": "#253293",
-        "success": "#575393",
-        "danger": "#0a47ff",
-        "warning": "#4c5b7b"
-      }
-    },
-    {
-      "name": "ascasca",
-      "colors": {
-        "primary": "#ddd231",
-        "secondary": "#e01010",
-        "success": "#689fa6",
-        "danger": "#54c47f",
-        "warning": "#604c1f"
-      },
-      "id": 14
-    },
-    {
-      "name": "sacas",
-      "colors": {
-        "primary": "#ea7575",
-        "secondary": "#000000",
-        "success": "#585fc6",
-        "danger": "#ff2929",
-        "warning": "#dee13d"
-      },
-      "id": 16
     }
   ]
 }

@@ -128,6 +128,8 @@ function deletItem(id) {
   })
     .then((response) => response.json())
     .then(() => console.log("User deleted"));
+    
+    location.reload();
 }
 
 function applyTheme(id, event) {
