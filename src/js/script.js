@@ -4,7 +4,6 @@ fetch(url)
   .then((response) => response.json())
   .then((data) => {
     getItems(data);
-    console.log(data);
   })
   .catch((error) => console.log(error));
 
@@ -73,8 +72,8 @@ function sendView(data) {
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="deletItem(${item.id}, event)">Apagar</button>
-                <button type="button" class="btn btn-primary" id="setting" onclick="applyTheme(${item.id}, event)">Aplicar</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="deletItem(${item.id}, event)">Apagar</button>
+                <button type="button" class="btn btn-success" id="setting" onclick="applyTheme(${item.id}, event)">Aplicar</button>
             </div>
         </div>
     </div>
@@ -140,9 +139,11 @@ function applyTheme(id, event) {
   const danger = document.getElementById(`danger-${id}`).value;
   const warning = document.getElementById(`warning-${id}`).value;
 
-  document.documentElement.style.setProperty("--primary", primary);
-  document.documentElement.style.setProperty("--secondary", secondary);
-  document.documentElement.style.setProperty("--success", success);
-  document.documentElement.style.setProperty("--danger", danger);
-  document.documentElement.style.setProperty("--warning", warning);
+  localStorage.setItem('--primary', JSON.stringify(primary));
+  localStorage.setItem('--secondary', JSON.stringify(secondary));
+  localStorage.setItem('--success', JSON.stringify(success));
+  localStorage.setItem('--danger', JSON.stringify(danger));
+  localStorage.setItem('--warning', JSON.stringify(warning));
+
+  location.reload();
 }
