@@ -4,7 +4,6 @@ fetch(url)
   .then((response) => response.json())
   .then((data) => {
     getItems(data);
-    console.log(data);
   })
   .catch((error) => console.log(error));
 
@@ -73,8 +72,8 @@ function sendView(data) {
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="deletItem(${item.id}, event)">Apagar</button>
-                <button type="button" class="btn btn-primary" id="setting" onclick="applyTheme(${item.id}, event)">Aplicar</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="deletItem(${item.id}, event)">Apagar</button>
+                <button type="button" class="btn btn-success" id="setting" onclick="applyTheme(${item.id}, event)">Aplicar</button>
             </div>
         </div>
     </div>
@@ -109,7 +108,6 @@ async function update(id, event) {
   sendData(id, object);
 
   function sendData(id, object) {
-    
     fetch(`http://localhost:3000/cores/${id}`, {
       method: "PATCH",
       headers: {
@@ -122,26 +120,32 @@ async function update(id, event) {
       })
       .catch((err) => alert(err));
   }
-
 }
 
 function deletItem(id) {
   fetch(`http://localhost:3000/cores/${id}`, {
-    method: 'DELETE',
+    method: "DELETE",
   })
-  .then(response => response.json())
-  .then(() => console.log('User deleted'));
+    .then((response) => response.json())
+    .then(() => console.log("User deleted"));
+    
+    location.reload();
 }
 
-function applyTheme(id, event){
+function applyTheme(id, event) {
   event.preventDefault();
 
-  const name = document.getElementById(`name-${id}`).value;
   const primary = document.getElementById(`primary-${id}`).value;
   const secondary = document.getElementById(`secondary-${id}`).value;
   const success = document.getElementById(`success-${id}`).value;
   const danger = document.getElementById(`danger-${id}`).value;
   const warning = document.getElementById(`warning-${id}`).value;
 
-  console.log(name);
+  localStorage.setItem('--primary', JSON.stringify(primary));
+  localStorage.setItem('--secondary', JSON.stringify(secondary));
+  localStorage.setItem('--success', JSON.stringify(success));
+  localStorage.setItem('--danger', JSON.stringify(danger));
+  localStorage.setItem('--warning', JSON.stringify(warning));
+
+  location.reload();
 }
