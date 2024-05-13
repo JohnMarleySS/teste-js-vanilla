@@ -13,6 +13,10 @@
 * Adicionar page: <br>
     Pagina de adicionar a paleta de cores, com alguns inputs e um criar.
 
-## Sobre o projeto:
+## Sobre o projeto
 
 O projeto foi feito com finalidades de testar o javascript, então foram feitas duas paginas com algumas funções pedidas, design nada muito eleborado, foram focados apenas focados na funcionalidade da aplicação.
+
+## Comentarios
+
+Infelizmente não consegui termina-lo por completo, acredito que falte alguma parte, mas, mesmo assim tenho certeza que fiz o melhor para funcionar 100% e mantendo o melhor codigo possivel.

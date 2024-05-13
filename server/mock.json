@@ -1,10 +1,21 @@
 {
   "cores": [
     {
+      "id": 1,
+      "name": "Tema Azul",
+      "colors": {
+        "primary": "#007bff",
+        "secondary": "#6c757d",
+        "success": "#28a745",
+        "danger": "#dc3545",
+        "warning": "#ffc107"
+      }
+    },
+    {
       "id": 2,
       "name": "Tema Verde",
       "colors": {
-        "primary": "#3dff6a",
+        "primary": "#28a745",
         "secondary": "#6c757d",
         "success": "#218838",
         "danger": "#c82333",
@@ -15,7 +26,7 @@
       "name": "Tema Marrom",
       "colors": {
         "primary": "#af5050",
-        "secondary": "#3e3232",
+        "secondary": "#000000",
         "success": "#00ffe1",
         "danger": "#4c00ff",
         "warning": "#0b040a"
@@ -28,8 +39,8 @@
         "primary": "#ff0000",
         "secondary": "#985d5d",
         "success": "#00ff11",
-        "danger": "#ecc5c5",
-        "warning": "#e41b1b"
+        "danger": "#ff0000",
+        "warning": "#a84848"
       },
       "id": 5
     },
@@ -54,17 +65,6 @@
         "warning": "#990000"
       },
       "id": 7
-    },
-    {
-      "name": "Theme Salmão",
-      "colors": {
-        "primary": "#e5aeae",
-        "secondary": "#2f2828",
-        "success": "#dd6e6e",
-        "danger": "#7d4a4a",
-        "warning": "#ea4d4d"
-      },
-      "id": 8
     },
     {
       "name": "Cores solidas",
