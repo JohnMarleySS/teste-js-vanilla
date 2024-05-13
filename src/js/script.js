@@ -66,14 +66,14 @@ function sendView(data) {
                             </div>
                         </div>
                         <div>
-                            <button type="submit" class="btn btn-primary btn-lg btn-block" onclick="update(${item.id}, event)">Atualizar</button>
+                            <button type="submit" class="btn btn-sucess btn-lg btn-block" onclick="update(${item.id}, event)">Atualizar</button>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="deletItem(${item.id}, event)">Apagar</button>
-                <button type="button" class="btn btn-success" id="setting" onclick="applyTheme(${item.id}, event)">Aplicar</button>
+                <button type="button" class="btn btn-sucess" id="setting" onclick="applyTheme(${item.id}, event)">Aplicar</button>
             </div>
         </div>
     </div>
@@ -134,6 +134,8 @@ function deletItem(id) {
 
 function applyTheme(id, event) {
   event.preventDefault();
+
+  
 
   const primary = document.getElementById(`primary-${id}`).value;
   const secondary = document.getElementById(`secondary-${id}`).value;

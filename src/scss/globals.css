@@ -21,8 +21,12 @@
   color: var(--secondary);
 }
 
-.btn-danger {
-  background-color: var(--sucess);
+.btn-sucess {
+  background-color: var(--success);
+  color: var(--secondary);
+}
+
+a, span, p, label {
   color: var(--secondary);
 }
 
@@ -30,10 +34,6 @@ body {
   width: 100%;
   height: 100vh;
   background-color: var(--primary);
-}
-
-a, span, p, label {
-  color: var(--secondary);
 }
 
 .card-body {
